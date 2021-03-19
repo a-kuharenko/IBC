@@ -10,8 +10,8 @@ cd ..
 mkdir -p example
 build/signal > example/signal.dat &
 build/measure > example/measure.dat &
-build/correlation > example/correlation.dat &
-build/auto_correlation > example/auto_correlation.dat &
+build/correlation > example/correlation.dat 2> example/correlation.time &
+build/auto_correlation > example/auto_correlation.dat 2>  example/auto_correlation.time &
 build/measure_corr > example/measure_corr.dat &
 wait
 
